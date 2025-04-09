@@ -1,1 +1,283 @@
 # saudagar-dahareun
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudagar Dahareun - Menu Makanan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-amber-800 mb-2">Saudagar Dahareun</h1>
+            <p class="text-lg text-gray-600">Menu Makanan Tradisional</p>
+        </header>
+
+        <!-- Menu Categories -->
+        <div class="flex justify-center mb-8">
+            <div class="inline-flex rounded-md shadow-sm">
+                <button class="px-4 py-2 text-sm font-medium rounded-l-lg bg-amber-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    Semua
+                </button>
+                <button class="px-4 py-2 text-sm font-medium bg-white text-amber-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    Makanan
+                </button>
+                <button class="px-4 py-2 text-sm font-medium bg-white text-amber-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    Minuman
+                </button>
+                <button class="px-4 py-2 text-sm font-medium rounded-r-lg bg-white text-amber-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    Snack
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="menu-items">
+            <!-- Makanan -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 menu-item">
+                <div class="h-48 bg-amber-100 flex items-center justify-center">
+                    <i class="fas fa-utensils text-6xl text-amber-500"></i>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Empal Gentong</h3>
+                    <p class="text-gray-600 mt-2">Empal gentong khas cirebon,dengan rempah rempah berkualitas & daging sapi berkualitas</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-amber-600">Rp 30.000</span>
+                        <button class="px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700 transition">
+                            <i class="fas fa-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 menu-item">
+                <div class="h-48 bg-amber-100 flex items-center justify-center">
+                    <i class="fas fa-drumstick-bite text-6xl text-amber-500"></i>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Ayam Goreng</h3>
+                    <p class="text-gray-600 mt-2">Ayam goreng krispi dengan sambal terasi</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-amber-600">Rp 20.000</span>
+                        <button class="px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700 transition">
+                            <i class="fas fa-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 menu-item">
+                <div class="h-48 bg-amber-100 flex items-center justify-center">
+                    <i class="fas fa-fish text-6xl text-amber-500"></i>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Ikan Bakar</h3>
+                    <p class="text-gray-600 mt-2">Ikan bakar dengan sambal mangga</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-amber-600">Rp 35.000</span>
+                        <button class="px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700 transition">
+                            <i class="fas fa-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minuman -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 menu-item">
+                <div class="h-48 bg-amber-100 flex items-center justify-center">
+                    <i class="fas fa-coffee text-6xl text-amber-500"></i>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Es Teh Manis</h3>
+                    <p class="text-gray-600 mt-2">Es teh dengan gula merah asli</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-amber-600">Rp 8.000</span>
+                        <button class="px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700 transition">
+                            <i class="fas fa-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 menu-item">
+                <div class="h-48 bg-amber-100 flex items-center justify-center">
+                    <i class="fas fa-glass-whiskey text-6xl text-amber-500"></i>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Es Jeruk</h3>
+                    <p class="text-gray-600 mt-2">Es jeruk segar dengan madu</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-amber-600">Rp 12.000</span>
+                        <button class="px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700 transition">
+                            <i class="fas fa-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snack -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 menu-item">
+                <div class="h-48 bg-amber-100 flex items-center justify-center">
+                    <i class="fas fa-cookie text-6xl text-amber-500"></i>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Lemper</h3>
+                    <p class="text-gray-600 mt-2">Lemper ayam dengan kelapa parut</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-amber-600">Rp 15.000</span>
+                        <button class="px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700 transition">
+                            <i class="fas fa-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="mt-12 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Pesanan Anda</h2>
+            <div class="space-y-4 order-list">
+                <!-- Order items will be added here dynamically -->
+            </div>
+            <div class="mt-6 pt-4 border-t">
+                <div class="flex justify-between font-semibold text-lg">
+                    <span>Total</span>
+                    <span class="total-amount">Rp 0</span>
+                </div>
+                <button class="checkout-btn mt-4 w-full py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition">
+                    Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inisialisasi data pesanan
+            let orders = [];
+            let total = 0;
+            
+            // Fungsi untuk menambah item ke pesanan
+            function addToOrder(itemName, price) {
+                const existingItem = orders.find(item => item.name === itemName);
+                
+                if (existingItem) {
+                    existingItem.quantity++;
+                    existingItem.subtotal = existingItem.quantity * price;
+                } else {
+                    orders.push({
+                        name: itemName,
+                        price: price,
+                        quantity: 1,
+                        subtotal: price
+                    });
+                }
+                
+                total += price;
+                updateOrderSummary();
+            }
+            
+            // Fungsi untuk mengupdate tampilan pesanan
+            function updateOrderSummary() {
+                const orderList = document.querySelector('.order-list');
+                const totalElement = document.querySelector('.total-amount');
+                
+                // Kosongkan daftar pesanan
+                orderList.innerHTML = '';
+                
+                // Tambahkan setiap item pesanan
+                orders.forEach(item => {
+                    const orderItem = document.createElement('div');
+                    orderItem.className = 'flex justify-between items-center border-b pb-2';
+                    orderItem.innerHTML = `
+                        <div>
+                            <h4 class="font-medium">${item.name}</h4>
+                            <p class="text-sm text-gray-500">${item.quantity} x Rp ${item.price.toLocaleString()}</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center minus-btn" data-name="${item.name}">
+                                <i class="fas fa-minus text-xs"></i>
+                            </button>
+                            <span>${item.quantity}</span>
+                            <button class="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center plus-btn" data-name="${item.name}">
+                                <i class="fas fa-plus text-xs"></i>
+                            </button>
+                        </div>
+                    `;
+                    orderList.appendChild(orderItem);
+                });
+                
+                // Update total
+                totalElement.textContent = `Rp ${total.toLocaleString()}`;
+                
+                // Tambahkan event listener untuk tombol plus/minus
+                document.querySelectorAll('.plus-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const itemName = this.getAttribute('data-name');
+                        const item = orders.find(item => item.name === itemName);
+                        if (item) {
+                            item.quantity++;
+                            item.subtotal = item.quantity * item.price;
+                            total += item.price;
+                            updateOrderSummary();
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('.minus-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const itemName = this.getAttribute('data-name');
+                        const itemIndex = orders.findIndex(item => item.name === itemName);
+                        if (itemIndex !== -1) {
+                            const item = orders[itemIndex];
+                            item.quantity--;
+                            total -= item.price;
+                            item.subtotal = item.quantity * item.price;
+                            
+                            if (item.quantity <= 0) {
+                                orders.splice(itemIndex, 1);
+                            }
+                            
+                            updateOrderSummary();
+                        }
+                    });
+                });
+            }
+            
+            // Event delegation untuk tombol "Tambah"
+            document.getElementById('menu-items').addEventListener('click', function(e) {
+                if (e.target.closest('.menu-item button')) {
+                    const btn = e.target.closest('.menu-item button');
+                    const menuItem = btn.closest('.menu-item');
+                    const itemName = menuItem.querySelector('h3').textContent;
+                    const priceText = menuItem.querySelector('span').textContent.replace('Rp ', '').replace('.', '');
+                    const price = parseInt(priceText);
+                    
+                    addToOrder(itemName, price);
+                }
+            });
+            
+            // Event listener untuk tombol "Pesan Sekarang"
+            document.querySelector('.checkout-btn').addEventListener('click', function() {
+                if (orders.length > 0) {
+                    alert(`Pesanan Anda sebesar Rp ${total.toLocaleString()} telah diterima!`);
+                    orders = [];
+                    total = 0;
+                    updateOrderSummary();
+                } else {
+                    alert('Silakan tambahkan item ke pesanan terlebih dahulu');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
